@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.result-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.result, .summary {
+    padding: 20px;
+    flex: 1;
+}
+
+.result {
+    background-color: #383be3;
+    color: white;
+    border-radius: 25px 25px 0 0;
+    text-align: center;
+}
+
+.result h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.result h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.result p {
+    margin: 10px 0;
+}
+
+.circle {
+    background: white;
+    border-radius: 50%;
+    padding: 16px;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eac9);
+}
+
+.rr {
+    margin: 0;
+    color: #555;
+    text-align: center;
+}
+
+.summary {
+    background-color: #fff;
+    text-align: center;
+}
+
+.summary h1 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.summary li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.label1 {
+    color: #d57f88;
+    background-color: #fdecea;
+}
+
+.label2 {
+    color: #e33849;
+    background-color: #fff4e6;
+}
+
+.label3 {
+    color: #383be3;
+    background-color: #edf4ff;
+}
+
+.label4 {
+    color: #383be3;
+    background-color: #f0f8ff;
+}
+
+.summary .score {
+    font-weight: bold;
+}
+
+.continue-button {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+}
+
+.continue-button:hover {
+    background-color: #031f5eae;
+}
+
+.oo {
+    margin: 20px 0;
+}
+
+@media (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .result-card {
+        flex-direction: row;
+    }
+
+    .result, .summary {
+        height: auto;
+        border-radius: 0;
+    }
+
+    .result {
+        border-radius: 25px 0 0 25px;
+    }
+
+    .summary {
+        border-radius: 0 25px 25px 0;
+    }
+}
